@@ -12,7 +12,7 @@ export default function userRegisterRoute(req, res) {
     if (!user || !user.isAdmin) {
       return res.status(403).json({
         ok: false,
-        message: "You do not have permission to create admin user",
+        message: "You do not have permission to create account",
       });
     }
 

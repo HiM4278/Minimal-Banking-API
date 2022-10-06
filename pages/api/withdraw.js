@@ -9,7 +9,7 @@ export default function withdrawRoute(req, res) {
     if (!user) {
       return res.status(403).json({
         ok: false,
-        message: "You do not have permission to deposit",
+        message: "You do not have permission to withdraw",
       });
     }
     const amount = req.body.amount;
